@@ -3,14 +3,14 @@ Scaffolding pipeline using data from long reads technologies (PacBio, ONT)
 to scaffold an initial draft assembly. The long reads are shred in smaller segments 
 (f.i. 1000 bp) to create fake mate-pairs. The fake mates are
 then aligned against the draft assembly and the spinner scaffolder looks for
-links between contigs and create scaffolds. 
+links between contigs and creates scaffolds. 
 
 Original pipeline from Zemin Ning (zn1@sanger.ac.uk): http://www.sanger.ac.uk/science/tools/smis.
 Version here modified to use the bwa aligner instead of smalt, and to automize
 compiling and running.
 
 ### Download and Compile:
-Requirements for compiling: zlib, bamtools
+Requirements for compiling: zlib (in PATH), bamtools
 
 	$ export MYBAMTOOLS=/full/path/to/bamtools
 	$ git clone https://github.com/fg6/smis.git
@@ -30,8 +30,7 @@ Requirements for compiling: zlib, bamtools
 	   long reads: fastq file of long reads for scaffolding
 
 #### Parameters
-The pipeline parameters can be modified in the settings.sh script (or in /full/path/to/destdir/mysettings.sh, to change only
-the settings in /full/path/to/destdir/).
+The pipeline parameters can be modified in the /full/path/to/destdir/mysettings.sh .
 The default aligner is bwa. Change to smalt by changing the 'aligner' variable in settings.sh
    
 #### Run:
