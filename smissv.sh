@@ -28,12 +28,12 @@ echo "${mysamtools:?samtools is not in your PATH, please set mysamtools variable
 ######################### Check if input files exist: ##########################
 if [ ! -r $fafile ]; then
   echo '   !!!!!!!!!!  Error: fasta file $fafile not found or not readable!' 
-  echo '                 Please define it in line 2 of your settings file !' 
+  echo '                 Please define the fafile variable in ./mysettings.sh file !' 
   exit
 fi
 if [ ! -r $fqfile ]; then
   echo '   !!!!!!!!!!  Error: fastq file $fqfile not found or not readable!'
-  echo '                 Please define it in line 5 of your settings file !' 
+  echo '                 Please define the fqfile variable in ./mysettings.sh file !' 
   exit
 fi
 
