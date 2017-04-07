@@ -22,6 +22,9 @@ Requirements for compiling: zlib, bamtools
 
 ### Run 
 #### Setup 
+Make sure to have $MYSMISDIR set before launching "setup.sh"
+
+	export MYSMISDIR=`pwd`
 	$MYSMISDIR/setup.sh </full/path/to/destdir> <draft_assembly> <long_reads>
 
 	where:
@@ -29,6 +32,7 @@ Requirements for compiling: zlib, bamtools
    	   draft_assembly: fasta file of the assembly to be scaffolded
   	   long_reads: fastq file of long reads for scaffolding
    
+
 #### Run:
 Requirements for running: samtools, bwa (or smalt) in PATH.
 
