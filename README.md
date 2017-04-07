@@ -26,8 +26,13 @@ Requirements for compiling: zlib, bamtools
 
 	where:
    	   /full/path/to/destdir: folder where to run the pipeline (Please provide full path)
-   	   draft_assembly: fasta file of the assembly to be scaffolded
-  	   long_reads: fastq file of long reads for scaffolding
+   	   draft assembly: fasta file of the assembly to be scaffolded
+	   long reads: fastq file of long reads for scaffolding
+
+#### Parameters
+The pipeline parameters can be modified in the settings.sh script (or in /full/path/to/destdir/mysettings.sh, to change only
+the settings in /full/path/to/destdir/).
+The default aligner is bwa. Change to smalt by changing the 'aligner' variable in settings.sh
    
 #### Run:
 Requirements for running: samtools, bwa (or smalt) in PATH.
