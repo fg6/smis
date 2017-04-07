@@ -15,17 +15,13 @@ Requirements for compiling: zlib, bamtools
 	$ export MYBAMTOOLS=/full/path/to/bamtools
 	$ git clone https://github.com/fg6/smis.git
 	$ cd smis 
-	$ export MYSMISDIR=`pwd`
 	$ ./makeall.sh
 
 (Tested with gcc-4.9.2, zlib-1.2.8, bamtools-2.4.0) 
 
 ### Run 
 #### Setup 
-Make sure to have $MYSMISDIR set to your smis folder before launching "setup.sh"
 
-	cd smis
-	export MYSMISDIR=`pwd`
 	$MYSMISDIR/setup.sh </full/path/to/destdir> <draft_assembly> <long_reads>
 
 	where:
@@ -33,7 +29,6 @@ Make sure to have $MYSMISDIR set to your smis folder before launching "setup.sh"
    	   draft_assembly: fasta file of the assembly to be scaffolded
   	   long_reads: fastq file of long reads for scaffolding
    
-
 #### Run:
 Requirements for running: samtools, bwa (or smalt) in PATH.
 
