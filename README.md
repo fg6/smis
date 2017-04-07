@@ -40,7 +40,7 @@ Requirements for running: samtools, bwa (or smalt) in PATH.
 	cd /full/path/to/destdir
    	./mysmissv.sh
 
-(Tested with samtools-1.3.1, bwa-0.7.12)
+(Tested with samtools-1.3.1, bwa-0.7.12, smalt-0.7.4)
 
 #### Results
 
