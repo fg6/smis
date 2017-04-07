@@ -150,7 +150,6 @@ printf "fasta-out\nspinner-sp2b.fasta\ncontigs-out\nspinner-contigs.dat\n">> fil
 
 $MYSMISDIR/smissv-bin/spinner_pg  > spinner.out
 
-rm mates_id60_mscore10.out 
 mv spinner-sp2b.fasta  ../spinner_scaffolds.fasta
 cd ../
 
@@ -161,8 +160,7 @@ echo " Log is in " $outp
 
 
 if [ ! $debug ]; then
- rm $workdir/genome.fasta*
- rm $workdir/fakemates_?.fasta
+ rm -rf $workdir/
 fi
-rm $workdir/gmon.out
+
 

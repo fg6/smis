@@ -44,10 +44,11 @@ subst=-1
 gapopen=-1
 gapext=-1
 
-# Scaffolding settings
-# running mode
-debug=1
 
+# running mode
+debug=0
+
+# Scaffolding settings
 # Settings for selecting indels
 distance_length=2500
 # minimum alignment score 
