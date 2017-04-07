@@ -119,7 +119,7 @@ elif  [ $aligner == "bwa" ]; then
     echo -e "\nAligning Fake-Mate Pairs to References with BWA\n"  >> $outp
     
     $mybwa index genome.fasta 
-    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq | samtools view -Sb - | samtools sort -o bwa_sorted -
+    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq | samtools view -Sb - | samtools sort -o bwa_sorted.bam -
   fi
 
   if [ $rerun == "y" ] || [ $rerun == "yes" ] || [ ! -f "mates_id60_mscore10.out" ] ; then
@@ -134,7 +134,7 @@ echo -e "\n
    Scaffolding Reference using Fake-Mate Pairs\n"  >> $outp
 
 echo '################## Scaffolding ... ##################' > $outp
-sed "s#MIN_EDGE#5#g" $bindir/../scafsettings.txt | sed  "s#NUM_SIGMA#$num_sigma#g" | sed  "s#MIN_LEN#$minlen#g" > settings.txt
+sed "s#MIN_EDGE#$min_edge#g" $bindir/../scafsettings.txt | sed  "s#NUM_SIGMA#$num_sigma#g" | sed  "s#MIN_LEN#$minlen#g" > settings.txt
 printf "1\nTesting string\nfasta-in\ngenome.fasta\n" > files.txt
 
 l1=(3000 5000 7000 9000 12000 20000)
