@@ -116,7 +116,7 @@ elif  [ $aligner == "bwa" ]; then
     echo -e "\nAligning Fake-Mate Pairs to References with BWA\n"  >> $outp
     
     $mybwa index genome.fasta 
-    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq | samtools view -Sb - | samtools sort -T bwa_sorted -
+    $mybwa mem -t $nodes -T $mapscore  -A $match -O $gapopen -E $gapext -B $subst  genome.fasta fakemates_1.fastq fakemates_2.fastq | samtools view -Sb - | samtools sort -o bwa_sorted -
   fi
 
   if [ $rerun == "y" ] || [ $rerun == "yes" ] || [ ! -f "mates_id60_mscore10.out" ] ; then
