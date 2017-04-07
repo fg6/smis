@@ -5,6 +5,8 @@ to scaffold an initial draft assembly. The long reads are shred in smaller segme
 then aligned against the draft assembly and the spinner scaffolder looks for
 links between contigs and create scaffolds. 
 
+Original pipeline from http://www.sanger.ac.uk/science/tools/smis
+
 
 ### COMPILE: 
 SMIS requires zlib, make sure it's in your PATH.
