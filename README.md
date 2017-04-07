@@ -17,6 +17,7 @@ with the location of your bamtools:
 	$ export MYBAMTOOLS=/full/path/to/bamtools
 
 After creating MYBAMTOOLS, compile the codes by:
+
 	$ ./makeall.sh
 
 
