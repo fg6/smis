@@ -22,8 +22,9 @@ Requirements for compiling: zlib, bamtools
 
 ### Run 
 #### Setup 
-Make sure to have $MYSMISDIR set before launching "setup.sh"
+Make sure to have $MYSMISDIR set to your smis folder before launching "setup.sh"
 
+	cd smis
 	export MYSMISDIR=`pwd`
 	$MYSMISDIR/setup.sh </full/path/to/destdir> <draft_assembly> <long_reads>
 
