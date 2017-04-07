@@ -15,12 +15,12 @@ Requirements: zlib, bamtools
 	$ export MYBAMTOOLS=/full/path/to/bamtools
 	$ git clone https://github.com/fg6/smis.git
 	$ cd smis 
+	$ export MYSMISDIR=`pwd`
 	$ ./makeall.sh
 
 
 ### Run 
 #### Setup 
- 	$ export MYSMISDIR=/full/path/to/smis_folder
 	$MYSMISDIR/setup.sh </full/path/to/destdir> <draft_assembly> <long_reads>
 
 	where:
