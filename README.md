@@ -18,6 +18,7 @@ Requirements: zlib, bamtools
 	$ export MYSMISDIR=`pwd`
 	$ ./makeall.sh
 
+(Tested with gcc-4.9.2, zlib-1.2.8, bamtools-2.4.0, samtools-1.3.1, bwa-0.7.12)
 
 ### Run 
 #### Setup 
