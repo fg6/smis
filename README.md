@@ -16,8 +16,6 @@ with the location of your bamtools:
 After creating MYBAMTOOLS, compile the codes by:
 	$ ./makeall.sh
 
-The executables will be in the smissv-bin folder
-
 
 ### RUN 
 #### Step 1:	
