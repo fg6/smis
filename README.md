@@ -31,6 +31,7 @@ Requirements for compiling: zlib, bamtools
    
 #### Run:
 Requirements for running: samtools, bwa (or smalt) in PATH.
+
 	cd /full/path/to/destdir
    	./mysmissv.sh
 
