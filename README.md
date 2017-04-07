@@ -10,7 +10,7 @@ Version here modified to use the bwa aligner instead of smalt, and to automize
 compiling and running.
 
 ### Download and Compile:
-Requirements: zlib, bamtools
+Requirements for compiling: zlib, bamtools
 
 	$ export MYBAMTOOLS=/full/path/to/bamtools
 	$ git clone https://github.com/fg6/smis.git
@@ -18,7 +18,7 @@ Requirements: zlib, bamtools
 	$ export MYSMISDIR=`pwd`
 	$ ./makeall.sh
 
-(Tested with gcc-4.9.2, zlib-1.2.8, bamtools-2.4.0, samtools-1.3.1, bwa-0.7.12)
+(Tested with gcc-4.9.2, zlib-1.2.8, bamtools-2.4.0) 
 
 ### Run 
 #### Setup 
@@ -30,8 +30,11 @@ Requirements: zlib, bamtools
   	   long_reads: fastq file of long reads for scaffolding
    
 #### Run:
+Requirements for running: samtools, bwa (or smalt) in PATH.
 	cd /full/path/to/destdir
    	./mysmissv.sh
+
+(Tested with samtools-1.3.1, bwa-0.7.12)
 
 #### Results
 
