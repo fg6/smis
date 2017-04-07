@@ -1,0 +1,72 @@
+# optimal settings found for GAGE human chromasome data
+################################# 1
+STAGE
+VERBOSE ON
+PAIR_THRESHOLD MIN_EDGE
+STRENGTH_TEST_RATIO 0.0
+FIND_SIGMAS NUM_SIGMA
+MIN_UNCERTAINTY 0
+EXCLUDE_SMALL_CONTIGS MIN_LEN
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING MIN_LEN
+
+# here he choose a high pair threshold, exclude a lot of small contigs, and
+# turn off the strength test so that all conflicts are left unresolved.
+################################# 4
+STAGE
+PAIR_THRESHOLD 5
+STRENGTH_TEST_RATIO 0.5
+EXCLUDE_SMALL_CONTIGS 6000
+
+################################# 6
+STAGE
+PAIR_THRESHOLD 10
+STRENGTH_TEST_RATIO 0.6
+
+################################# 7
+STAGE
+PAIR_THRESHOLD 10
+STRENGTH_TEST_RATIO 0.7
+EXCLUDE_SMALL_CONTIGS 500
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 6000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 8000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 10000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 15000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 25000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 35000
+
+################################# 11
+STAGE
+PAIR_THRESHOLD 10
+PREVENT_TWO_SMALL_SCAFFOLDS_JOINING 2000
+JUMP_LENGTH 45000
+
