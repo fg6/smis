@@ -1,5 +1,9 @@
 
 
+setsmis=`echo export MYSMISDIR=\`pwd\`` 
+sed -i '5i\'"$setsmis" setup.sh
+
+
 mkdir -p smissv-bin
 rm -f smissv-bin/*
 
