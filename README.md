@@ -11,9 +11,10 @@ compiling and running.
 
 ### Download and Compile:
 Requirements: zlib, bamtools
-git clone https://github.com/fg6/smis.git
 
-	$ export MYBAMTOOLS=/full/path/to/bamtools 
+	$ export MYBAMTOOLS=/full/path/to/bamtools
+	$ git clone https://github.com/fg6/smis.git
+	$ cd smis 
 	$ ./makeall.sh
 
 
