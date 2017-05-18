@@ -26,8 +26,8 @@ Requirements for compiling: zlib (in PATH), bamtools
 
 	where:
    	   /full/path/to/destdir: folder where to run the pipeline (Please provide full path)
-   	   draft assembly: fasta file of the assembly to be scaffolded
-	   long reads: fastq file of long reads for scaffolding
+   	   draft assembly: fasta file of the assembly to be scaffolded  (Please provide full path)
+	   long reads: fastq file of long reads for scaffolding (Please provide full path)
 
 #### Parameters
 The pipeline parameters can be modified in the /full/path/to/destdir/mysettings.sh .
