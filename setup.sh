@@ -11,8 +11,8 @@ fqfile=$3
 if [ $# -lt 3 ]  || [ $1 == '-h' ]; then
         echo; echo "  Usage:" \$MYSMISDIR/$(basename $0) \</full/path/to/destdir\> \<draft_assembly\> \<long_reads\> ; echo
         echo "    /full/path/to/destdir: folder where to run the pipeline (Please provide full path)"
-	echo "    draft_assembly: fasta file of the assembly to be scaffolded"
-	echo "    long_reads: fastq file of long reads for scaffolding"
+	echo "    draft_assembly: fasta file of the assembly to be scaffolded (Please provide full path)"
+	echo "    long_reads: fastq file of long reads for scaffolding (Please provide full path)"
 	exit 1
 fi
 
