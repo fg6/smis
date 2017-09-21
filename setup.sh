@@ -1,6 +1,6 @@
 #!/bin/bash
-set -o errexit
-set -o pipefail
+#set -o errexit
+#set -o pipefail
 
 
 odir=$1    
