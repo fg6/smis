@@ -9,11 +9,24 @@ if [[ $setdone < 2 ]]; then
     sed -i '5i\'"$setsmis" setup.sh
 fi
 
+export MYSMISDIR=$MYSMISDIR
+setdone=0
+setdone=`grep "export MYSMISDIR" src/makefile  | wc -l`
+if [[ $setdone < 1 ]]; then
+    setsmis=`echo export MYSMISDIR=$MYSMISDIR`
+    sed -i '3i\'"$setsmis" src/makefile 
+fi
+
+
+
+
+
 cd $MYSMISDIR/src
 if [[ ! -d bamtools ]] || [[ ! -f bamtools/bin/bamtools ]]; then
     rm -rf bamtools
     git clone https://github.com/pezmaster31/bamtools.git
     cd bamtools
+    git checkout 71392a251aaea8b797661846b2878e16efd04285   #2.4.0
     mkdir build
     cd build
     cmake ..
@@ -27,6 +40,8 @@ if [[ ! -f bamtools/bin/bamtools ]]; then
     errs=$(($errs+1))
     exit
 fi
+
+
 
 
 cd $MYSMISDIR/src
