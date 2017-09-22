@@ -2,9 +2,6 @@
 
 
 
-export MYSMISDIR=/lustre/scratch117/sciops/team117/hpag/fg6/analysis/Tests/smis
-
-
 odir=$1    
 fafile=$2
 fqfile=$3
