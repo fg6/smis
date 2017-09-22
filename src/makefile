@@ -1,4 +1,5 @@
-# Makefile for smis_scaffold 
+
+
 CC=c++
 
 

@@ -3,10 +3,16 @@
 errs=0
 MYSMISDIR=`pwd`
 
+
+sed -i '/export/d' src/makefile 
+sed -i '/export MYSMISDIR/d' setup.sh 
+
+
+
 setdone=`grep "export MYSMISDIR" setup.sh | wc -l`
 if [[ $setdone < 2 ]]; then 
     setsmis=`echo export MYSMISDIR=$MYSMISDIR` 
-    sed -i '5i\'"$setsmis" setup.sh
+    sed -i '2i\'"$setsmis" setup.sh
 fi
 
 export MYSMISDIR=$MYSMISDIR
@@ -14,7 +20,7 @@ setdone=0
 setdone=`grep "export MYSMISDIR" src/makefile  | wc -l`
 if [[ $setdone < 1 ]]; then
     setsmis=`echo export MYSMISDIR=$MYSMISDIR`
-    sed -i '3i\'"$setsmis" src/makefile 
+    sed -i '1i\'"$setsmis" src/makefile 
 fi
 
 

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 odir=$1    
 fafile=$2
 fqfile=$3
@@ -21,7 +20,7 @@ mkdir -p $odir
 cd $odir
 
 rm -f mysettings.sh
-echo "export MYSMISDIR="$MYSMISDIR > mysettings.sh
+echo export "MYSMISDIR="$MYSMISDIR > mysettings.sh
 sed -e "s#ODIR#$odir#g"  $MYSMISDIR/settings.sh \
 	| sed -e "s#FAFILE#$fafile#g" | sed -e "s#FQFILE#$fqfile#g"   >> mysettings.sh
 
