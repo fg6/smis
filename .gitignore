@@ -1,1 +1,8 @@
 smissv-bin
+src/bamtools/
+src/smis_rename
+src/smis_select_chr
+src/smis_shred
+src/smis_sort
+src/spinner/spinner_pg
+src/spinner_pg
