@@ -1,8 +1,8 @@
 # Makefile for smis_scaffold 
 CC=c++
 
-CFLAGS= -O2  -I$(MYBAMTOOLS)/include -Wl,-rpath,$(MYBAMTOOLS)/lib 
-LFLAGS= -lm -L$(MYBAMTOOLS)/lib -lbamtools -lz  
+CFLAGS= -O2  -Ibamtools/include -Wl,-rpath,bamtools/lib 
+LFLAGS= -lm -Lbamtools/lib -lbamtools -lz  
 
 
 SMISSORTT= smis_sort.o

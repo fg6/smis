@@ -1,6 +1,8 @@
 #!/bin/bash
-#set -o errexit
-#set -o pipefail
+
+
+
+export MYSMISDIR=/lustre/scratch117/sciops/team117/hpag/fg6/analysis/Tests/smis
 
 
 odir=$1    
