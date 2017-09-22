@@ -1,6 +1,6 @@
 # Makefile for smis_scaffold 
 CC=c++
-export MYSMISDIR=/lustre/scratch117/sciops/team117/hpag/fg6/analysis/Tests/smis
+
 
 CFLAGS= -O2  -I${MYSMISDIR}/src/bamtools/include -Wl,-rpath,${MYSMISDIR}/src/bamtools/lib
 LFLAGS= -lm -L${MYSMISDIR}/src/bamtools/lib -lbamtools -lz
