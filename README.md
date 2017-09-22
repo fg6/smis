@@ -9,15 +9,19 @@ Original pipeline from Zemin Ning (zn1@sanger.ac.uk): http://www.sanger.ac.uk/sc
 Version here modified to use the bwa aligner instead of smalt, and to automize
 compiling and running.
 
-### Download and Compile:
-Requirements for compiling: zlib (in PATH), bamtools
 
-	$ export MYBAMTOOLS=/full/path/to/bamtools
+### Download and Compile:
+Requirements for compiling: Cmake > = 2.6.4
+
 	$ git clone https://github.com/fg6/smis.git
 	$ cd smis 
 	$ ./makeall.sh
 
-(Tested with gcc-4.9.2, zlib-1.2.8, bamtools-2.4.0) 
+(Tested with gcc-4.9.2, bamtools-2.4.0) 
+
+#### External packages
+The smis pipeline downloads and installs the bamtools for reading bam files (https://github.com/pezmaster31/bamtools) 
+
 
 ### Run 
 #### Setup 
