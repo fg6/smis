@@ -1,4 +1,7 @@
 
+
+<em style="color:red"> Please notice that this repository is outdated. The most updated version of SMIS can be found here: https://github.com/SangerHpag/smis.git </em>
+
 Scaffolding pipeline using data from long reads technologies (PacBio, ONT)
 to scaffold an initial draft assembly. The long reads are shred in smaller segments 
 (f.i. 1000 bp) to create fake mate-pairs. The fake mates are
